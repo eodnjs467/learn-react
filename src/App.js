@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Todo from "./components/Todo";
+import {Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <h1>My Todos</h1>
+        <Route path={'/'}>
+          <Todo text={"펜션 예약하기"} />
+        </Route>
+        <Route path={'/'}>
+        <Todo text={"캠핑 용품 챙기기"} />
+          <Route path={'/'}>
+        <Todo text={"장보기"} />
+      </div>
   );
 }
 
