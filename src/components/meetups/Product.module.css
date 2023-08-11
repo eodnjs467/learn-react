@@ -1,0 +1,12 @@
+.tr {
+  text-align: left;
+  display: flex;
+}
+.tr td {
+  display: inline-block;
+  width: 100px;
+  margin-left: 10px;
+}
+.stocked {
+  color: red;
+}
