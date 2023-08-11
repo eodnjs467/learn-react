@@ -4,6 +4,7 @@ import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
 import FavoritesPage from "./pages/Favorites";
 import Layout from "./components/layout/Layout";
+import Search from "./pages/Search";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path={'/favorites'}>
           <FavoritesPage />
+        </Route>
+        <Route path={'/search'}>
+          <Search />
         </Route>
       </Layout>
   );
