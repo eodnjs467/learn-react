@@ -1,6 +1,6 @@
-import FilterableProductTable from "../components/meetups/FilterableProductTable";
+import FilterableProductTable from "../components/products/FilterableProductTable";
 
-function SearchPage() {
+function ProductsPage() {
   const Fruits = [
     {id: 1, name: 'Apple', price: '$1', stocked: true},
     {id: 2, name: 'Dragonfruit', price: '$1', stocked: true},
@@ -20,4 +20,4 @@ function SearchPage() {
   )
 }
 
-export default SearchPage;
+export default ProductsPage;

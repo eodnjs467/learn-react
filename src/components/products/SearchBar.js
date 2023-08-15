@@ -1,10 +1,10 @@
-import styles from './SearchBar.module.css';
-function SearchBar({ onChangeChecked }) {
+import './SearchBar.module.css';
+function SearchBar({ onChangeChecked, input, onChangeInput }) {
   return(
       <>
         <div>
           <label htmlFor="search-bar" />
-          <input type="text" placeholder={"Search..."}/>
+          <input type="text" placeholder={"Search..."} value={input} onChange={onChangeInput}/>
         </div>
         <div>
           <input type="checkbox" onChange={onChangeChecked}/>
